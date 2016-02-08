@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_boardDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_portrait"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#36FFFFFF"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Board Details"
+            android:textColor="@color/black"
+            android:textSize="36sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-5dp"
+            android:background="#A1000000"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#18FFFFFF"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Board Type"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="#28FFFFFF"/>
+                <Button
+                    android:id="@+id/value_OneBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_white_transparency_20"
+                    android:gravity="center"
+                    android:onClick="myClickHandler_BoardDetails"
+                    android:text="@string/one_board"
+                    android:textColor="@color/black"
+                    />
+                <Button
+                    android:id="@+id/value_ThreeBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_white_transparency_20"
+                    android:gravity="center"
+                    android:onClick="myClickHandler_BoardDetails"
+                    android:text="3 Board"
+                    android:textColor="@color/black"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="#72FFFFFF"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Board Size"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="#28FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/RowSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_pressed_thin_border"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="X"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="x"/>
+                    <Button
+                        android:id="@+id/ColSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_pressed_thin_border"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="Y"
+                        android:textColor="@color/black"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/btnBoardSize"
+                        android:layout_width="32dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:onClick="myClickHandler_BoardDetails"
+                        >
+                        <TextView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_action_edit"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="#72FFFFFF"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Card Set :"
+
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="#28FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp">
+                    <Button
+                        android:id="@+id/value_CardSetOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="@string/I"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/value_CardSetTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="@string/II"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/value_CardSetThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="@string/III"
+                        android:textColor="@color/black"
+                        />
+
+                    <Button
+                        android:id="@+id/CardSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_pressed_thin_border"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:textColor="@color/black"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btnCardSet"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:onClick="myClickHandler_BoardDetails">
+                        <TextView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_action_edit"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#72FFFFFF"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="Scroll Type"
+
+                        android:textColor="@color/black"/>
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="11dp"
+                        android:background="#28FFFFFF"/>
+
+                    <Button
+                        android:id="@+id/value_noScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="@string/no_scroll"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:id="@+id/value_verticalScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="Vertical"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:id="@+id/value_horizontalScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="Horizontal"
+                        android:textColor="@color/black"/>
+                    <Button
+                        android:id="@+id/value_bothScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_white_transparency_20"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="Both"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#72FFFFFF"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/region_TimeTrial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="Time-Trial time :"
+                        android:textColor="@color/black" />
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:background="#28FFFFFF"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/TimeTrialTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_white_pressed_thin_border"
+                            android:gravity="center"
+                            android:onClick="myClickHandler_BoardDetails"
+                            android:text="5 sec"
+
+                            android:textColor="@color/black"/>
+                        <RelativeLayout
+                            android:id="@+id/btnTimeTrialTime"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:onClick="myClickHandler_BoardDetails">
+                            <TextView
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ic_action_edit"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#90FFFFFF"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="One Touch Flip"
+                    android:textColor="@color/black" />
+                <RelativeLayout
+                    android:layout_width="18dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/OneTouchFlip"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_white_reverse"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="On"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#90FFFFFF"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Locking Time"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="18dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/LockingTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_white_pressed_thin_border"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:text="600 ms"
+                        android:textColor="@color/black"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btnLockingTime"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:onClick="myClickHandler_BoardDetails">
+                        <TextView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_action_edit"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#90FFFFFF"
+                />
+
+            <LinearLayout
+                android:id="@+id/region_boardBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Background :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#28FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:id="@+id/previousBoardBackground"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_prev_page"
+                        android:clickable="true"
+                        android:onClick="myClickHandler_BoardDetails"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/ivBoardBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginRight="31dp"
+                        android:layout_weight="1"
+                        android:background="@color/lemon_grass"
+                        android:gravity="center"
+                        android:onClick="myClickHandler_BoardDetails"/>
+
+
+                    <TextView
+                        android:id="@+id/nextBoardBackground"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_next_page"
+                        android:clickable="true"
+                        android:onClick="myClickHandler_BoardDetails"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:padding="2dp">
+        <RelativeLayout
+            android:id="@+id/btnBack"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn_rectangle_green"
+            android:onClick="myClickHandler_BoardDetails">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="27dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_back"
+                android:onClick="myClickHandler_BoardDetails"
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn_rectangle_green"
+            android:gravity="center"
+            android:onClick="myClickHandler_BoardDetails"
+            android:text="@string/start"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="region_leader_board_love_affair" type="id"/>
+    <item name="btn_leader_board_love_affair" type="id"/>
+    <item name="tv_leader_board_love_affair" type="id"/>
+
+    <item name="region_leader_board_thunder_bolt" type="id"/>
+    <item name="btn_leader_board_thunder_bolt" type="id"/>
+    <item name="tv_leader_board_thunder_bolt" type="id"/>
+
+    <item name="region_leader_board_jet" type="id"/>
+    <item name="btn_leader_board_jet" type="id"/>
+    <item name="tv_leader_board_jet" type="id"/>
+
+    <item name="region_leader_board_hit_or_miss" type="id"/>
+    <item name="btn_leader_board_hit_or_miss" type="id"/>
+    <item name="tv_leader_board_hit_or_miss" type="id"/>
+
+    <item name="region_leader_board_stars_1" type="id"/>
+    <item name="btn_leader_board_stars_1" type="id"/>
+    <item name="tv_leader_board_stars_1" type="id"/>
+
+    <item name="region_leader_board_shelter" type="id"/>
+    <item name="btn_leader_board_shelter" type="id"/>
+    <item name="tv_leader_board_shelter" type="id"/>
+
+    <item name="region_leader_board_stars_2" type="id"/>
+    <item name="btn_leader_board_stars_2" type="id"/>
+    <item name="tv_leader_board_stars_2" type="id"/>
+</resources>

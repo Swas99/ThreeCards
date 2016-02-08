@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item >
+        <bitmap android:src="@drawable/img_minus"/>
+    </item>
+    <item >
+        <shape
+            android:shape="rectangle"
+            >
+            <corners
+                android:radius="4dp"
+                />
+            <gradient
+                android:angle="90"
+                android:endColor="#18FFFFFF"
+                android:startColor="#27FFFFFF"
+                />
+        </shape>
+    </item>
+</layer-list>

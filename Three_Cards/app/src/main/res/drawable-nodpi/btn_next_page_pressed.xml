@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item >
+        <shape
+            android:shape="oval"
+            >
+            <corners
+                android:radius="11dp"/>
+            <gradient
+                android:angle="90"
+                android:endColor="#09FFFFFF"
+                android:startColor="#02FFFFFF"
+                />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/img_next_page"/>
+    </item>
+</layer-list>

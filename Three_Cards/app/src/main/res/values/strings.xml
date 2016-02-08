@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">3 Cards</string>
+    <string name="action_settings">Settings</string>
+    <string name="player_mode"><u>Player Mode</u></string>
+
+    <string name="one_board">1 Board</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_game_summary">GameSummary</string>
+
+
+    <!-- Test Banner :-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-4622920858510017/4626009687</string>
+    
+    <string name="adbuddiz_ad_id">277718f2-f0ce-4dea-8439-dce45bf6ead3</string>
+
+    <string name="ok">OK</string>
+    <string name="both_scroll">Both Scroll</string>
+    <string name="horizontal_scroll">Horizontal Scroll</string>
+    <string name="no_scroll">No Scroll</string>
+    <string name="vertical_scroll">Vertical Scroll</string>
+    <string name="yay">Yay!</string>
+    <string name="moves_limit">Moves limit : </string>
+    <string name="moves_made">Moves made : </string>
+    <string name="restart">Restart</string>
+    <string name="summary">Summary</string>
+    <string name="you_win">You win!</string>
+    <string name="arcade">Arcade</string>
+    <string name="next">Next</string>
+    <string name="time_trial">Time-Trial</string>
+    <string name="skip_symbol"><![CDATA[>>]]></string>
+    <string name="time_trial_help_text_3">If timer goes out : \na. Random card pair(s) are replaced\nb. Random card pair(s) are swapped</string>
+    <string name="I">I</string>
+    <string name="II">II</string>
+    <string name="III">III</string>
+    <string name="start">Start</string>
+    <string name="help_symbol">\?</string>
+
+
+        <string name="signing_in">Signing in with Google</string>
+        <string name="signing_out">Signing out</string>
+        <string name="achievements_not_available">Please sign in to view achievements.</string>
+        <string name="leaderboards_not_available">Please sign in to view leaderboards.</string>
+        <string name="show_achievements">Show Achievements</string>
+        <string name="show_leaderboards">Show Leaderboards</string>
+        <string name="sign_in_why">Sign in with Google to share your scores and achievements.</string>
+        <string name="you_are_signed_in">You are signed in with Google.</string>
+        <string name="sign_out">Sign out</string>
+        <string name="sign_in_to_upload_this_score">Sign in now to upload this score, save your achievements and share your progress with friends.</string>
+        <string name="signin_other_error">There was an issue with sign in.  Please try again later.</string>
+        <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+        <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+        <string name="license_failed">License check failed.</string>
+        <string name="unknown_error">Unknown error.</string>
+
+
+    <string name="richie_rich"><u>Richie-Rich</u></string>
+    <string name="sprinter"><u>Sprinter</u></string>
+    <string name="marathon_runner"><u>Marathon Runner</u></string>
+    <string name="champion_of_story_mode"><u>Champion Of Story Mode</u></string>
+    <string name="champion_of_love_affair"><u>Champion Of Love-Affair</u></string>
+    <string name="champion_of_thunder_bolt"><u>Champion Of Thunder-Bolt</u></string>
+    <string name="champion_of_jet"><u>Champion Of Jet</u></string>
+    <string name="champion_of_hit_or_miss"><u>Champion Of Hit Or Miss</u></string>
+    <string name="champion_of_stars_1"><u>Champion Of Stars 1.0</u></string>
+    <string name="champion_of_shelter"><u>Champion Of Shelter</u></string>
+    <string name="champion_of_stars_2"><u>Champion Of Stars 2.0</u></string>
+</resources>
