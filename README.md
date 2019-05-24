@@ -29,5 +29,19 @@ Objective : Find all sets of matching cards on board
 ● Accept challenges to earn extra coins
 
 
-This is a more challenge extension of 2 card.
 Playstore link - https://play.google.com/store/apps/details?id=com.archer.matching_card_game.three_cards
+
+
+
+
+#Screenshots:
+![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
+![](screenshots/5.png)
+![](screenshots/6.png)
+![](screenshots/7.png)
+![](screenshots/8.png)
+![](screenshots/9.png)
+![](screenshots/10.png)
